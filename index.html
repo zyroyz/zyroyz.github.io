@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hash Client | The Ultimate Gorilla Tag Mod Menu</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font family -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Deep space blue/dark indigo background */
+            background-color: #1A1A2E; 
+            color: #E0E0E0; /* Off-white text */
+        }
+        /* Custom class for the neon glow effect on buttons */
+        .neon-glow {
+            box-shadow: 0 0 5px #38B2AC, 0 0 10px #38B2AC, 0 0 15px rgba(56, 178, 172, 0.4);
+            transition: all 0.3s ease;
+        }
+        .neon-glow:hover {
+            box-shadow: 0 0 10px #38B2AC, 0 0 20px #38B2AC, 0 0 30px rgba(56, 178, 172, 0.6);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Navigation Header -->
+    <header class="p-4 md:p-6 shadow-lg bg-[#2C394B]">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Logo/Title -->
+            <h1 class="text-3xl font-extrabold tracking-widest text-[#38B2AC] cursor-pointer">
+                HASH<span class="text-white">CLIENT</span>
+            </h1>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6 text-lg font-medium">
+                <a href="#hero" class="hover:text-[#38B2AC] transition duration-200">Home</a>
+                <a href="#features" class="hover:text-[#38B2AC] transition duration-200">Features</a>
+                <a href="#download" class="hover:text-[#38B2AC] transition duration-200">Download</a>
+            </nav>
+            <!-- Mobile Menu Placeholder (Not functional, but shows the UI element) -->
+            <button class="md:hidden p-2 rounded-lg hover:bg-[#1A1A2E]/50 transition duration-200">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-4 md:p-8">
+
+        <!-- Hero Section - REVISED COPY -->
+        <section id="hero" class="text-center py-20 md:py-32">
+            <h2 class="text-5xl md:text-7xl font-black mb-4 leading-tight text-white">
+                <span class="text-[#38B2AC]">Break</span> the Game. <span class="text-[#38B2AC]">Own</span> the Servers.
+            </h2>
+            <p class="text-xl md:text-2xl text-[#A0AEC0] mb-10 max-w-3xl mx-auto">
+                The next-gen, completely **undetectable** mod menu for Gorilla Tag. Get the features you need without getting caught.
+            </p>
+            <a href="#download" 
+               class="inline-block px-10 py-4 text-xl font-bold rounded-xl bg-[#38B2AC] text-[#1A1A2E] neon-glow">
+                Download Latest Version
+            </a>
+            <p class="mt-4 text-sm text-[#A0AEC0] font-medium">Version 4.2.1 | Last Updated: Oct 2025</p>
+        </section>
+
+        <!-- Features Section - REVISED COPY -->
+        <section id="features" class="py-16 md:py-24">
+            <h3 class="text-4xl md:text-5xl font-extrabold text-center mb-12 text-white">
+                Core Modules
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Feature Card 1: Movement -->
+                <div class="bg-[#2C394B] p-6 rounded-2xl shadow-xl transition duration-300 hover:scale-[1.02]">
+                    <div class="text-[#38B2AC] mb-3">
+                        <!-- SVG Icon: Rocket -->
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 10.5V6a3 3 0 00-3-3l-4 4a3 3 0 106 6zm0 0v1.5a3 3 0 106 6V12a9 9 0 00-9-9v0zm-4 4l1.458 2.046c.307.426.697.804 1.157 1.127l3.75 2.5a.75.75 0 00.957-1.28l-3.595-2.396a1.5 1.5 0 01-.659-.824l-.175-.419a.75.75 0 00-.594-.572L9 16.5m8.25-6H16.5a2.25 2.25 0 00-2.25 2.25v2.25m-2.25-4.5h2.25m-4.5 4.5h2.25"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3 text-white">Physics is Optional</h4>
+                    <p class="text-[#A0AEC0]">
+                        Unrestricted flight, instant speed bursts, and gravity controls. Move like a ghost and bypass server physics checks with custom, ultra-smooth movement settings.
+                    </p>
+                </div>
+
+                <!-- Feature Card 2: Stealth -->
+                <div class="bg-[#2C394B] p-6 rounded-2xl shadow-xl transition duration-300 hover:scale-[1.02]">
+                    <div class="text-[#38B2AC] mb-3">
+                        <!-- SVG Icon: Ghost/Invisible -->
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.192-2.058-.577-3.016z"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3 text-white">Stay Invisible</h4>
+                    <p class="text-[#A0AEC0]">
+                        Advanced **Ghost Mode**, instant server hops, and deep anti-detection features keep you under the radar. Play how you want, without the ban hammer.
+                    </p>
+                </div>
+
+                <!-- Feature Card 3: Custom Configs -->
+                <div class="bg-[#2C394B] p-6 rounded-2xl shadow-xl transition duration-300 hover:scale-[1.02]">
+                    <div class="text-[#38B2AC] mb-3">
+                        <!-- SVG Icon: User Configuration -->
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.942 3.313.824 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.942 1.543-.824 3.313-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.942-3.313-.824-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.942-1.543.824-3.313 2.37-2.37.568.342 1.258.583 1.983.583z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3 text-white">Loadouts & Presets</h4>
+                    <p class="text-[#A0AEC0]">
+                        Stop wasting time configuring. Save your perfect competitive setup or ultimate troll configuration and load it instantly. Share your secret sauce with the community.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section - REVISED COPY -->
+        <section id="download" class="text-center py-16 md:py-24 bg-[#2C394B] rounded-3xl mt-16 p-8 shadow-2xl">
+            <h3 class="text-4xl md:text-5xl font-extrabold mb-4 text-white">
+                Ready to Upgrade Your Game?
+            </h3>
+            <p class="text-xl text-[#A0AEC0] mb-8 max-w-2xl mx-auto">
+                Join the Hash Client community. Get the DLL now and follow the simple injection steps in our guide. BepInEx recommended!
+            </p>
+
+            <!-- Download Button (The main call to action) -->
+            <a href="https://github.com/hashclient/releases/latest" target="_blank"
+               class="inline-block px-12 py-5 text-2xl font-black rounded-xl bg-[#38B2AC] text-[#1A1A2E] neon-glow">
+                [ Download HashClient.dll ]
+            </a>
+
+            <div class="mt-8">
+                <p class="text-base text-[#A0AEC0] mb-2">
+                    <span class="font-bold text-[#38B2AC]">Installation Guide:</span> Check our detailed guide on the GitHub repository for injection steps.
+                </p>
+                
+                <!-- Social Links -->
+                <div class="flex justify-center space-x-6 text-2xl mt-4">
+                    <!-- GitHub Link -->
+                    <a href="https://github.com/hashclient" target="_blank" aria-label="GitHub Repository" 
+                       class="text-white hover:text-[#38B2AC] transition duration-200">
+                        <!-- GitHub Icon SVG -->
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 0C5.372 0 0 5.372 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.82-.257.82-.57 0-.28-.01-1.017-.01-2.003-3.337.726-4.04-1.61-4.04-1.61-.546-1.387-1.334-1.758-1.334-1.758-1.09-.742.082-.727.082-.727 1.205.086 1.838 1.238 1.838 1.238 1.07 1.833 2.809 1.304 3.49.996.108-.773.418-1.304.762-1.603-2.665-.3-5.466-1.332-5.466-5.93 0-1.308.468-2.373 1.235-3.21-.124-.303-.535-1.517.117-3.177 0 0 1.008-.32 3.301 1.23a11.41 11.41 0 016 0c2.292-1.55 3.3-1.23 3.3-1.23.65 1.66.239 2.874.117 3.177.77.837 1.235 1.902 1.235 3.21 0 4.61-2.805 5.625-5.476 5.92.427.366.812 1.08.812 2.182 0 1.577-.015 2.846-.015 3.23 0 .317.21.685.825.57C20.565 21.8 24 17.303 24 12c0-6.628-5.372-12-12-12z" clip-rule="evenodd"/></svg>
+                    </a>
+                    
+                    <!-- Discord Link -->
+                    <a href="https://discord.gg/hashclient-official" target="_blank" aria-label="Discord Server" 
+                       class="text-white hover:text-[#38B2AC] transition duration-200">
+                        <!-- Discord Icon SVG -->
+                         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.317 4.004c-.38-.28-1.584-.6-2.923-.6H6.606c-1.337 0-2.54.32-2.922.6C2.28 5.756 2 8.783 2 12c0 3.216.28 6.244 1.684 7.996.38.28 1.584.6 2.923.6h9.782c1.338 0 2.54-.32 2.922-.6 1.404-1.752 1.684-4.78 1.684-7.996 0-3.217-.28-6.244-1.684-7.996zm-7.617 12.333H11.23v-5.233h2.469v5.233zm4.939-5.233H15.94v5.233h2.469v-5.233zm-9.878 0H6.303v5.233h2.469v-5.233z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#2C394B] mt-16 p-6 text-center text-[#A0AEC0]">
+        <div class="max-w-7xl mx-auto text-sm">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Hash Client. All rights reserved.</p>
+            <p class="mt-2 text-xs">This product is fan-made and not affiliated with or endorsed by Another Axiom LLC or the Gorilla Tag game.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
 
